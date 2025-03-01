@@ -109,6 +109,7 @@ const SwipeGame: React.FC = () => {
         {decisions.slice(currentIndex).map((decision, index) => { 
           if (index <= (ARRAY_LENGTH - 1)) {
             setEvent(decisions[index + 1])
+            console.log(event)
           }
           
           return(
