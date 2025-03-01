@@ -1,5 +1,7 @@
 import { Decision } from "../pages/GamePlay";
 
+export const ARRAY_LENGTH = 30
+
 export const decisions: Decision[] = [
   {
     id: 1,

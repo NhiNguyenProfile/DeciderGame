@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import SwipeCard from "../components/card/Card";
-import { decisions } from "../data/decisions";
+import { ARRAY_LENGTH, decisions } from "../data/decisions";
 import { VerticalProgressBar } from "../components/progress-bar/ProgressBar";
 import * as motion from "motion/react-client";
 
@@ -36,7 +36,7 @@ const SwipeGame: React.FC = () => {
     army: MAX,
     human: MAX,
   });
-  // const [events, setEvents] = useState<Decision[]>(decisions);
+  const [event, setEvent] = useState<Decision>(decisions[0]);
   // const [message, setMessage] = useState<string>("");
   const [currentIndex] = useState<number>(0);
 
@@ -83,6 +83,7 @@ const SwipeGame: React.FC = () => {
 
   const onSwipe = (direction: string) => {
     console.log(direction)
+    
   }
 
   return (
@@ -105,9 +106,14 @@ const SwipeGame: React.FC = () => {
         </p>
       </motion.div>
       <div className="relative w-64 h-[350px]">
-        {decisions.slice(currentIndex).map((decision, index) => (
+        {decisions.slice(currentIndex).map((decision, index) => { 
+          if (index <= (ARRAY_LENGTH - 1)) {
+            setEvent(decisions[index + 1])
+          }
+          
+          return(
           <SwipeCard key={index} decision={decision}  onSwipe={onSwipe}/>
-        ))}
+        )})}
       </div>
 
       <div className="grid grid-cols-2 gap-8 my-8 font-normal text-md px-5">
