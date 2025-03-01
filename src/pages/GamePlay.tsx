@@ -1,9 +1,7 @@
-import React, { useState, useEffect } from "react";
-import { getEventsForYear } from "../utils/logic";
+import React, { useState } from "react";
 import SwipeCard from "../components/card/Card";
 import { decisions } from "../data/decisions";
 import { VerticalProgressBar } from "../components/progress-bar/ProgressBar";
-import { TypeAnimation } from "react-type-animation";
 import * as motion from "motion/react-client";
 
 export interface Effect {
@@ -26,21 +24,21 @@ export interface Decision {
   right: Choice;
 }
 
-const YEARS = 6;
-const EVENTS_PER_YEAR = 5;
+// const YEARS = 6;
+// const EVENTS_PER_YEAR = 5;
 export const MAX = 30;
 
 const SwipeGame: React.FC = () => {
-  const [year, setYear] = useState<number>(1);
-  const [stats, setStats] = useState<Effect>({
+  const [year] = useState<number>(1);
+  const [stats] = useState<Effect>({
     economy: MAX,
     environment: MAX,
     army: MAX,
     human: MAX,
   });
-  const [events, setEvents] = useState<Decision[]>(decisions);
-  const [message, setMessage] = useState<string>("");
-  const [currentIndex, setCurrentIndex] = useState<number>(0);
+  // const [events, setEvents] = useState<Decision[]>(decisions);
+  // const [message, setMessage] = useState<string>("");
+  const [currentIndex] = useState<number>(0);
 
   //   useEffect(() => {
   //     if (events[currentIndex]) {
@@ -104,7 +102,7 @@ const SwipeGame: React.FC = () => {
       </motion.div>
       <div className="relative w-64 h-[350px]">
         {decisions.slice(currentIndex).map((decision, index) => (
-          <SwipeCard key={index} decision={decisions[index]} />
+          <SwipeCard key={index} decision={decision} />
         ))}
       </div>
 

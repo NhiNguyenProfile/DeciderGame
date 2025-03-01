@@ -33,6 +33,7 @@ const SwipeCard: React.FC<SwipeCardProps> = ({ decision, onSwipe }) => {
         characterImages[decision.character][1] || ""
       } rounded-xl flex flex-col items-center justify-end text-xl font-bold`}
       preventSwipe={["up", "down"]}
+      onSwipe={onSwipe}
     >
       <p
         className={`text-sm max-w-xl mb-16 font-normal ${
