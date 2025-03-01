@@ -81,6 +81,10 @@ const SwipeGame: React.FC = () => {
   //     }
   //   };
 
+  const onSwipe = (direction: string) => {
+    console.log(direction)
+  }
+
   return (
     <div className="flex flex-col justify-center items-center h-full">
       <VerticalProgressBar percentage={stats} />
@@ -102,7 +106,7 @@ const SwipeGame: React.FC = () => {
       </motion.div>
       <div className="relative w-64 h-[350px]">
         {decisions.slice(currentIndex).map((decision, index) => (
-          <SwipeCard key={index} decision={decision} />
+          <SwipeCard key={index} decision={decision}  onSwipe={onSwipe}/>
         ))}
       </div>
 
