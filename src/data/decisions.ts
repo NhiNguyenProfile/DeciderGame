@@ -1,6 +1,6 @@
 import { Decision } from "../pages/GamePlay";
 
-export const ARRAY_LENGTH = 30
+export const ARRAY_LENGTH = 30;
 
 export const decisions: Decision[] = [
   {
@@ -9,11 +9,11 @@ export const decisions: Decision[] = [
     character: "Bộ trưởng Kinh tế",
     left: {
       answer: "Chúng ta giàu rồi!",
-      effect: { economy: +5, environment: -5, human: +5, army: +5 },
+      effect: { economy: +10, environment: -10, human: +10, army: +10 },
     },
     right: {
       answer: "Ta giàu rồi!",
-      effect: { economy: +10, environment: -5 },
+      effect: { economy: +10, environment: -10 },
     },
   },
   {
@@ -23,11 +23,11 @@ export const decisions: Decision[] = [
     character: "Nhà môi trường học",
     left: {
       answer: "Ban hành luật ngay!",
-      effect: { environment: +10, economy: -5, human: +5 },
+      effect: { environment: +10, economy: -10, human: +10 },
     },
     right: {
       answer: "Không, kinh tế là quan trọng hơn!",
-      effect: { economy: +5, environment: -10 },
+      effect: { economy: +10, environment: -10 },
     },
   },
   {
@@ -40,7 +40,7 @@ export const decisions: Decision[] = [
     },
     right: {
       answer: "Tìm kiếm một giải pháp ngoại giao.",
-      effect: { human: +10, army: -5 },
+      effect: { human: +10, army: -10 },
     },
   },
   {
@@ -50,11 +50,11 @@ export const decisions: Decision[] = [
     character: "Lãnh đạo dân sự",
     left: {
       answer: "Kiểm soát giá ngay!",
-      effect: { economy: -5, human: +10 },
+      effect: { economy: -10, human: +10 },
     },
     right: {
       answer: "Để thị trường tự điều chỉnh.",
-      effect: { economy: +5, human: -5 },
+      effect: { economy: +10, human: -10 },
     },
   },
   {
@@ -64,11 +64,11 @@ export const decisions: Decision[] = [
     character: "Cố vấn Chính phủ",
     left: {
       answer: "Đồng ý ký kết!",
-      effect: { economy: +10, human: +5 },
+      effect: { economy: +10, human: +10 },
     },
     right: {
       answer: "Cẩn trọng, xem xét kỹ lưỡng.",
-      effect: { economy: -5, human: +5 },
+      effect: { economy: -10, human: +10 },
     },
   },
   {
@@ -78,11 +78,11 @@ export const decisions: Decision[] = [
     character: "Bộ trưởng Y tế",
     left: {
       answer: "Tăng ngân sách y tế!",
-      effect: { human: +10, economy: -5 },
+      effect: { human: +10, economy: -10 },
     },
     right: {
       answer: "Không, ưu tiên kinh tế trước.",
-      effect: { economy: +5, human: -10 },
+      effect: { economy: +10, human: -10 },
     },
   },
   {
@@ -92,11 +92,11 @@ export const decisions: Decision[] = [
     character: "Bộ trưởng Giáo dục",
     left: {
       answer: "Tăng lương ngay!",
-      effect: { human: +10, economy: -5 },
+      effect: { human: +10, economy: -10 },
     },
     right: {
       answer: "Không, ngân sách đang hạn chế.",
-      effect: { economy: +5, human: -5 },
+      effect: { economy: +10, human: -10 },
     },
   },
   {
@@ -106,11 +106,11 @@ export const decisions: Decision[] = [
     character: "Bộ trưởng Kinh tế",
     left: {
       answer: "Chấp nhận đầu tư!",
-      effect: { economy: +15, human: +5 },
+      effect: { economy: +15, human: +10 },
     },
     right: {
       answer: "Từ chối, bảo vệ doanh nghiệp trong nước!",
-      effect: { economy: -5, human: +5 },
+      effect: { economy: -10, human: +10 },
     },
   },
   {
@@ -120,7 +120,7 @@ export const decisions: Decision[] = [
     character: "Nhà môi trường học",
     left: {
       answer: "Ngăn chặn ngay lập tức!",
-      effect: { environment: +10, economy: -5 },
+      effect: { environment: +10, economy: -10 },
     },
     right: {
       answer: "Ưu tiên phát triển công nghiệp!",
@@ -134,11 +134,11 @@ export const decisions: Decision[] = [
     character: "Cố vấn Chính phủ",
     left: {
       answer: "Mở cuộc điều tra toàn diện!",
-      effect: { human: +10, economy: -5 },
+      effect: { human: +10, economy: -10 },
     },
     right: {
       answer: "Che đậy để giữ ổn định!",
-      effect: { economy: +5, human: -10 },
+      effect: { economy: +10, human: -10 },
     },
   },
   {
@@ -148,11 +148,11 @@ export const decisions: Decision[] = [
     character: "Bộ trưởng Giáo dục",
     left: {
       answer: "Tăng ngân sách ngay!",
-      effect: { human: +10, economy: -5 },
+      effect: { human: +10, economy: -10 },
     },
     right: {
       answer: "Không thể, ngân sách đang eo hẹp!",
-      effect: { economy: +5, human: -5 },
+      effect: { economy: +10, human: -10 },
     },
   },
   {
@@ -166,7 +166,7 @@ export const decisions: Decision[] = [
     },
     right: {
       answer: "Không thể, chúng ta không đủ ngân sách!",
-      effect: { economy: +5, human: -10 },
+      effect: { economy: +10, human: -10 },
     },
   },
   {
@@ -176,11 +176,11 @@ export const decisions: Decision[] = [
     character: "Nhà khoa học",
     left: {
       answer: "Tài trợ ngay lập tức!",
-      effect: { environment: +15, economy: -5 },
+      effect: { environment: +15, economy: -10 },
     },
     right: {
       answer: "Không, chưa có đủ bằng chứng!",
-      effect: { economy: +5, environment: -5 },
+      effect: { economy: +10, environment: -10 },
     },
   },
   {
@@ -190,11 +190,11 @@ export const decisions: Decision[] = [
     character: "Bộ trưởng Y tế",
     left: {
       answer: "Bắt buộc tiêm vaccine!",
-      effect: { human: +10, army: -5 },
+      effect: { human: +10, army: -10 },
     },
     right: {
       answer: "Để người dân tự quyết định!",
-      effect: { human: -5, economy: +5 },
+      effect: { human: -10, economy: +10 },
     },
   },
   {
@@ -208,7 +208,7 @@ export const decisions: Decision[] = [
     },
     right: {
       answer: "Không, có nhiều vấn đề quan trọng hơn!",
-      effect: { economy: +5, human: -5 },
+      effect: { economy: +10, human: -10 },
     },
   },
   {
@@ -222,7 +222,7 @@ export const decisions: Decision[] = [
     },
     right: {
       answer: "Không, chúng ta cần nhân lực cho nền kinh tế!",
-      effect: { economy: +10, army: -5 },
+      effect: { economy: +10, army: -10 },
     },
   },
   {
@@ -232,11 +232,11 @@ export const decisions: Decision[] = [
     character: "Cố vấn Chính phủ",
     left: {
       answer: "Trừng phạt nghiêm khắc!",
-      effect: { human: +10, economy: -5 },
+      effect: { human: +10, economy: -10 },
     },
     right: {
       answer: "Dìm xuống để tránh bất ổn!",
-      effect: { economy: +5, human: -10 },
+      effect: { economy: +10, human: -10 },
     },
   },
   {
@@ -246,11 +246,11 @@ export const decisions: Decision[] = [
     character: "Nhà khoa học",
     left: {
       answer: "Tài trợ để thúc đẩy đổi mới!",
-      effect: { economy: +5, human: +10 },
+      effect: { economy: +10, human: +10 },
     },
     right: {
       answer: "Không, đầu tư vào những thứ thiết thực hơn.",
-      effect: { economy: +5, human: -5 },
+      effect: { economy: +10, human: -10 },
     },
   },
   {
@@ -260,11 +260,11 @@ export const decisions: Decision[] = [
     character: "Nhà môi trường học",
     left: {
       answer: "Hỗ trợ nông dân chuyển sang mô hình bền vững.",
-      effect: { environment: +10, economy: -5, human: +5 },
+      effect: { environment: +10, economy: -10, human: +10 },
     },
     right: {
       answer: "Tiếp tục mô hình hiện tại.",
-      effect: { environment: -10, economy: +5 },
+      effect: { environment: -10, economy: +10 },
     },
   },
   {
@@ -273,11 +273,11 @@ export const decisions: Decision[] = [
     character: "Nhà khoa học",
     left: {
       answer: "Đồng ý, khoa học cần phát triển!",
-      effect: { economy: -5, human: +10 },
+      effect: { economy: -10, human: +10 },
     },
     right: {
       answer: "Không, ưu tiên các vấn đề thực tế hơn.",
-      effect: { economy: +5, human: -5 },
+      effect: { economy: +10, human: -10 },
     },
   },
   {
@@ -286,11 +286,11 @@ export const decisions: Decision[] = [
     character: "Bộ trưởng Y tế",
     left: {
       answer: "Tăng cường đầu tư vào y tế!",
-      effect: { human: +10, economy: -5 },
+      effect: { human: +10, economy: -10 },
     },
     right: {
       answer: "Không thể, ngân sách đang hạn chế.",
-      effect: { economy: +5, human: -10 },
+      effect: { economy: +10, human: -10 },
     },
   },
   {
@@ -300,7 +300,7 @@ export const decisions: Decision[] = [
     character: "Nhà môi trường học",
     left: {
       answer: "Chấp nhận đề xuất và hướng đến phát triển bền vững.",
-      effect: { environment: +10, economy: +5 },
+      effect: { environment: +10, economy: +10 },
     },
     right: {
       answer: "Từ chối, tập trung phát triển kinh tế nội địa.",
@@ -314,11 +314,11 @@ export const decisions: Decision[] = [
     character: "Cố vấn Chính phủ",
     left: {
       answer: "Tăng cường an ninh mạng!",
-      effect: { human: +5, economy: -5 },
+      effect: { human: +10, economy: -10 },
     },
     right: {
       answer: "Chưa cần thiết, ưu tiên vấn đề khác.",
-      effect: { economy: +5, human: -5 },
+      effect: { economy: +10, human: -10 },
     },
   },
   {
@@ -327,11 +327,11 @@ export const decisions: Decision[] = [
     character: "Bộ trưởng Kinh tế",
     left: {
       answer: "Chấp nhận, tạo việc làm cho người dân.",
-      effect: { economy: +10, human: +5, environment: -5 },
+      effect: { economy: +10, human: +10, environment: -10 },
     },
     right: {
       answer: "Từ chối, tránh ô nhiễm môi trường.",
-      effect: { environment: +10, economy: -5 },
+      effect: { environment: +10, economy: -10 },
     },
   },
   {
@@ -340,11 +340,11 @@ export const decisions: Decision[] = [
     character: "Bộ trưởng Giáo dục",
     left: {
       answer: "Đồng ý, giúp sinh viên bắt kịp xu hướng!",
-      effect: { human: +10, economy: +5 },
+      effect: { human: +10, economy: +10 },
     },
     right: {
       answer: "Không, tập trung vào những kỹ năng cơ bản.",
-      effect: { economy: +5, human: -5 },
+      effect: { economy: +10, human: -10 },
     },
   },
   {
@@ -353,11 +353,11 @@ export const decisions: Decision[] = [
     character: "Bộ trưởng Kinh tế",
     left: {
       answer: "Chấp nhận, du lịch sẽ phát triển!",
-      effect: { economy: +10, human: +5 },
+      effect: { economy: +10, human: +10, environment: -10 },
     },
     right: {
       answer: "Từ chối, ưu tiên bảo tồn văn hóa bản địa.",
-      effect: { environment: +5, economy: -5 },
+      effect: { environment: +10, economy: -10 },
     },
   },
   {
@@ -366,11 +366,11 @@ export const decisions: Decision[] = [
     character: "Tướng Quân đội",
     left: {
       answer: "Đồng ý, tăng cường sức mạnh quốc phòng!",
-      effect: { army: +10, human: -5 },
+      effect: { army: +10, human: -10 },
     },
     right: {
       answer: "Không, cần tôn trọng quyền tự do cá nhân.",
-      effect: { human: +10, army: -5 },
+      effect: { human: +10, army: -10 },
     },
   },
   {
@@ -380,11 +380,11 @@ export const decisions: Decision[] = [
     character: "Bộ trưởng Y tế",
     left: {
       answer: "Đồng ý, nhưng phải đảm bảo an toàn!",
-      effect: { human: +5, economy: +5 },
+      effect: { human: +10, economy: +10 },
     },
     right: {
       answer: "Không, thử nghiệm chưa đủ an toàn.",
-      effect: { human: +10, economy: -5 },
+      effect: { human: +10, economy: -10 },
     },
   },
   {
@@ -393,11 +393,11 @@ export const decisions: Decision[] = [
     character: "Cố vấn Chính phủ",
     left: {
       answer: "Tăng tuổi nghỉ hưu để giảm áp lực kinh tế.",
-      effect: { economy: +5, human: -5 },
+      effect: { economy: +10, human: -10 },
     },
     right: {
       answer: "Không, đảm bảo người lao động được nghỉ sớm.",
-      effect: { human: +5, economy: -5 },
+      effect: { human: +10, economy: -10 },
     },
   },
   {
@@ -406,11 +406,11 @@ export const decisions: Decision[] = [
     character: "Bộ trưởng Kinh tế",
     left: {
       answer: "Đồng ý, khuyến khích giao thông công cộng!",
-      effect: { environment: +10, economy: -5 },
+      effect: { environment: +10, economy: -10 },
     },
     right: {
       answer: "Không, điều đó sẽ gây khó khăn cho người dân.",
-      effect: { human: +10, economy: -5 },
+      effect: { human: +10, economy: -10 },
     },
   },
 ];
