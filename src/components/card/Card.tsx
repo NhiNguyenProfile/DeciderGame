@@ -35,7 +35,7 @@ const SwipeCard: React.FC<SwipeCardProps> = ({ decision, onSwipe }) => {
       preventSwipe={["up", "down"]}
       flickOnSwipe={true}
       swipeRequirementType="velocity"
-      swipeThreshold={1}
+      swipeThreshold={0.2}
       onSwipe={onSwipe}
     >
       <p
