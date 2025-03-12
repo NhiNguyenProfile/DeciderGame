@@ -193,7 +193,7 @@ const SwipeGame: React.FC = () => {
             className="h-10! bg-neutral-900! text-white!"
             onClick={() => setIsOpen(false)}
           >
-            Tương lai của tôi!
+            Tương lai của tôi
           </Button>
           <Button className="h-10!" onClick={() => setIsOpen(false)}>
             Sẵn sàng
