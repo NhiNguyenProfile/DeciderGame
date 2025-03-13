@@ -245,7 +245,7 @@ export const decisions: Decision[] = [
     character: "Cố vấn Chính phủ",
     left: {
       answer: "Đầu tư minh bạch vào chương trình STEM!",
-      effect: { human: -5, economy: -5, army: +5 },
+      effect: { human: +5, economy: -5, army: +5 },
     },
     right: {
       answer: "Ưu tiên các vấn đề khác!",
