@@ -10,11 +10,12 @@ export const decisions: Decision[] = [
     character: "Bộ trưởng Kinh tế",
     right: {
       answer: "Mở đấu thầu công khai, phải minh bạch!",
-      effect: { economy: +10, environment: -15, human: +10, army: +10 },
+      effect: { economy: +10, environment: -15, army: +10 },
     },
     left: {
-      answer: "Mở đấu thầu, chọn công ty có ‘giá tốt nhất’, hiểu chứ?",
-      effect: { economy: +10, environment: -15 },
+      answer:
+        "Mở đấu thầu, chọn công ty cho chúng ta ‘giá tốt nhất’, hiểu chứ?",
+      effect: { economy: +10, environment: -15, human: -10 },
     },
   },
   {
@@ -28,7 +29,7 @@ export const decisions: Decision[] = [
     },
     right: {
       answer: "Tạm hoãn để ưu tiên lợi ích của các tập đoàn.",
-      effect: { economy: +10, environment: -15 },
+      effect: { economy: +10, environment: -15, human: -10 },
     },
   },
   {
@@ -41,7 +42,7 @@ export const decisions: Decision[] = [
     },
     right: {
       answer: "Ký hợp đồng với bên cung cấp cho chúng ta nhiều ‘Ưu đãi’.",
-      effect: { army: +10, economy: +5 },
+      effect: { army: +10, economy: +5, human: -10 },
     },
   },
   {
@@ -95,7 +96,7 @@ export const decisions: Decision[] = [
       effect: { human: +10, economy: -5 },
     },
     right: {
-      answer: "Chuyển ngân sách cho dự án không rõ ràng!",
+      answer: "Giải ngân ngay! Nhưng phần dư thì…",
       effect: { economy: -10, human: -10 },
     },
   },
@@ -120,11 +121,11 @@ export const decisions: Decision[] = [
     character: "Nhà môi trường học",
     right: {
       answer: "Cấp 1 tỷ, cần xử lí ngay",
-      effect: { environment: -15, economy: -10 },
+      effect: { environment: -10, economy: -10 },
     },
     left: {
       answer: "Cấp 1 tỷ! Nhưng chúng ta có 20%",
-      effect: { economy: +5, environment: -20 },
+      effect: { economy: +5, environment: -15, human: -10 },
     },
   },
   {
@@ -152,7 +153,7 @@ export const decisions: Decision[] = [
     },
     left: {
       answer: "Đồng ý, miễn là họ 'hỗ trợ' chúng ta một khoản.",
-      effect: { economy: +10, human: -10 },
+      effect: { economy: +10, human: -10, army: -10 },
     },
   },
   {
@@ -175,11 +176,11 @@ export const decisions: Decision[] = [
     character: "Nhà khoa học",
     left: {
       answer: "Tài trợ minh bạch!",
-      effect: { environment: +5, economy: -10 },
+      effect: { environment: +5, economy: -10, human: +5 },
     },
     right: {
       answer: "Không, chúng ta cần tiết kiệm ngân sách!",
-      effect: { economy: +5, environment: -25 },
+      effect: { economy: +5, environment: -20, human: -5 },
     },
   },
   {
@@ -192,8 +193,8 @@ export const decisions: Decision[] = [
       effect: { human: +5, army: +5, economy: -5, environment: +5 },
     },
     right: {
-      answer: "Đồng ý, miễn là họ 'gửi quà' đúng lúc.",
-      effect: { human: -10, economy: -10 },
+      answer: "Đồng ý, miễn là họ 'biết điều'.",
+      effect: { human: -10 },
     },
   },
   {
@@ -248,7 +249,7 @@ export const decisions: Decision[] = [
     },
     right: {
       answer: "Ưu tiên các vấn đề khác!",
-      effect: { economy: -5, human: -5, army: -5 },
+      effect: { economy: -5, army: +5, environment: +5 },
     },
   },
   {
@@ -260,7 +261,7 @@ export const decisions: Decision[] = [
       effect: { economy: -10, human: +5, environment: -20, army: +5 },
     },
     left: {
-      answer: "Mở đấu thầu, ưu tiên 'lợi ích'",
+      answer: "Mở đấu thầu, ưu tiên 'lợi ích' của chúng ta.",
       effect: { environment: -25, economy: +5, human: -5, army: -5 },
     },
   },

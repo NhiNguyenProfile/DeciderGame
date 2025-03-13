@@ -9,6 +9,7 @@ function App() {
   useEffect(() => {
     const playAudio = () => {
       if (audioRef.current && !isPlaying) {
+        audioRef.current.volume = 0.5;
         audioRef.current
           .play()
           .then(() => {

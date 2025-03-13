@@ -122,7 +122,7 @@ const SwipeGame: React.FC = () => {
   return (
     <div className="flex flex-col justify-center items-center h-full">
       <VerticalProgressBar percentage={stats} />
-      <p className="text-md font-medium my-5 bg-stone-700 text-white p-2 px-5">
+      <p className="text-md font-medium mt-2 mb-6 bg-stone-700 text-white p-2 px-5">
         {year} Năm cầm quyền{" "}
       </p>
       <motion.div
@@ -134,13 +134,12 @@ const SwipeGame: React.FC = () => {
           scale: { type: "spring", visualDuration: 0.2 },
         }}
       >
-        <p className="text-base font-normal h-fit px-5 pb-5">{event.message}</p>
+        <p className="text-base font-normal h-fit px-5 py-3 bg-teal-100">
+          {event.message}
+        </p>
       </motion.div>
-      <div className="relative w-64 h-[350px]">
-        <CardGroup onSwipe={onSwipe} decisions={decisions} />
-      </div>
 
-      <div className="grid grid-cols-2 gap-8 my-8 font-normal text-md px-5">
+      <div className="grid grid-cols-2 gap-8 my-7 font-normal text-md px-5">
         <motion.div
           initial={{ opacity: 0, scale: 0 }}
           animate={{ opacity: 1, scale: 1 }}
@@ -150,7 +149,7 @@ const SwipeGame: React.FC = () => {
             scale: { type: "spring", visualDuration: 0.4 },
           }}
         >
-          <p className="col-span-1 ">{event.left.answer}</p>
+          <p className="col-span-1 text-base">{event.left.answer}</p>
         </motion.div>
         <motion.div
           initial={{ opacity: 0, scale: 0 }}
@@ -161,9 +160,14 @@ const SwipeGame: React.FC = () => {
             scale: { type: "spring", visualDuration: 0.4 },
           }}
         >
-          <p className="col-span-1">{event.right.answer}</p>
+          <p className="col-span-1 text-base">{event.right.answer}</p>
         </motion.div>
       </div>
+
+      <div className="relative w-64 h-[350px]">
+        <CardGroup onSwipe={onSwipe} decisions={decisions} />
+      </div>
+
       <div
         id="overlay"
         className={
