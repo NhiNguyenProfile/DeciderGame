@@ -208,7 +208,7 @@ export const decisions: Decision[] = [
     },
     left: {
       answer: "Kiểm soát báo chí, dẹp chuyện này đi.",
-      effect: { human: -10 },
+      effect: { human: -10, economy: +5 },
     },
   },
   {
@@ -222,7 +222,7 @@ export const decisions: Decision[] = [
     },
     left: {
       answer: "Cứ phê duyệt nhanh, miễn là có 'khoản phí' hợp lý.",
-      effect: { human: -10 },
+      effect: { human: -10, economy: +5 },
     },
   },
   {
@@ -262,7 +262,7 @@ export const decisions: Decision[] = [
     },
     left: {
       answer: "Mở đấu thầu, ưu tiên 'lợi ích' của chúng ta.",
-      effect: { environment: -25, economy: +5, human: -5, army: -5 },
+      effect: { environment: -20, economy: +5, human: -5, army: -5 },
     },
   },
   {
